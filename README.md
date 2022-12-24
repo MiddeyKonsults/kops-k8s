@@ -124,13 +124,14 @@ sudo service sshd restart
 sudo passwd ubuntu
 ```
 
-#To manage your cluster from the kops server:
-	kops export kubeconfig --admin
-
-
 # 11c) To list nodes
 
 	  kubectl get nodes 
+	  
+** To manage your cluster from the kops server **
+	kops export kubeconfig --admin
+	kops validate cluster
+	   
  
 # 12) To Delete Cluster
 
